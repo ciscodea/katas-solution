@@ -126,4 +126,18 @@ def spin_words(sentence):
     return ' '.join(result)
 
 
-print(spin_words('hola como estas eres el amor de mi vida de verdad'))
+"""
+Find the missing term in an Arithmetic Progression
+
+You have to write a function that receives a list, list size will always be at least 3 numbers. The missing term will never be the first or last one.
+"""
+
+def find_missing(sequence):
+    n = sequence[1] - sequence[0]
+    n = sequence[2] - sequence[1]
+
+    for i in range(0, len(sequence)):
+        if sequence[i] + n == sequence[i+1]:
+            continue
+        else:
+            return sequence[i] + n
