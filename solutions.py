@@ -130,7 +130,7 @@ def spin_words(sentence):
         else:
             result.append(word)
     return ' '.join(result)
-<<<<<<< HEAD
+
 
 
 """
@@ -148,5 +148,3 @@ def find_missing(sequence):
             continue
         else:
             return sequence[i] + n
-=======
->>>>>>> 36194e5d37f0e679f37edee50b12a70cce3a803c
