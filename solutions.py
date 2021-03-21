@@ -41,6 +41,7 @@ def order(sentence):
         
     return str.strip()
 
+
 """
 Given an array of integers, find the one that appears an odd number of times.
 There will always be only one integer that appears an odd number of times.
@@ -71,7 +72,10 @@ def race(v1, v2, g):
     if v1 > 0 and v2 > 0 and g > 0:
         diference = v2 - v1
         seconds = (g * 3600) / diference 
+
         return [int(seconds / 3600), int((seconds % 3600) / 60), int(seconds % 60)]
+
+    
 """
 A pangram is a sentence that contains every single letter of the alphabet at least once. 
 For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram, because it uses the letters A-Z at least once (case is irrelevant).
@@ -88,7 +92,8 @@ def is_pangram(s):
             return False
         
     return True
-            
+
+
 """
 n this kata you are required to, given a string, replace every letter with its position in the alphabet.
 If anything in the text isn't a letter, ignore it and don't return it.
@@ -109,6 +114,7 @@ def alphabet_position(text):
             print("")
     return alphabet_position.strip()
 
+
 """
 Write a function that takes in a string of one or more words, and returns the same string, 
 but with all five or more letter words reversed (Just like the name of this Kata). 
@@ -124,6 +130,7 @@ def spin_words(sentence):
         else:
             result.append(word)
     return ' '.join(result)
+<<<<<<< HEAD
 
 
 """
@@ -141,3 +148,5 @@ def find_missing(sequence):
             continue
         else:
             return sequence[i] + n
+=======
+>>>>>>> 36194e5d37f0e679f37edee50b12a70cce3a803c
