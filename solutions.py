@@ -148,3 +148,28 @@ def find_missing(sequence):
             continue
         else:
             return sequence[i] + n
+
+"""
+In this simple Kata your task is to create a function that turns a string into a Mexican Wave. You will be passed a string and you must return that string in an array where an uppercase letter is a person standing up. 
+
+
+wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
+"""
+
+
+def wave(word):
+    list_letters = []
+    
+    
+    for i in range(0, len(word)):
+        
+        list_wave = [x for x in word]
+        
+        if list_wave[i] != " ":
+            
+            list_wave[i] = list_wave[i].upper()
+            word_wave = "".join([y for y in list_wave])
+            list_letters.append(word_wave)
+    
+    return list_letters
+
