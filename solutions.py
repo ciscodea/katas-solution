@@ -190,8 +190,9 @@ def to_camel_case(text):
             text_to_list[i] = ""
             text_to_list[i+1] = text_to_list[i+1].upper()
 
-    camel_case = ''.join([x for x in text_to_list])
 
-    return camel_case
+    return ''.join([x for x in text_to_list])
 
+
+print(to_camel_case('esto es una prueba_de-como-funciona camel case'))
 
