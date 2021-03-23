@@ -173,3 +173,25 @@ def wave(word):
     
     return list_letters
 
+
+
+"""
+Convert string into camel case
+Example: "the-stealth-warrior" gets converted to "theStealthWarrior"
+"""
+
+def to_camel_case(text):
+    text_to_list = [x for x in text]
+    
+    replaced_chars = ('-','_', ' ')
+
+    for i in range(0, len(text)):
+        if text_to_list[i] in replaced_chars:
+            text_to_list[i] = ""
+            text_to_list[i+1] = text_to_list[i+1].upper()
+
+    camel_case = ''.join([x for x in text_to_list])
+
+    return camel_case
+
+
